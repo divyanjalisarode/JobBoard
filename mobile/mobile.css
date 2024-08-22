@@ -1,0 +1,208 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+img {
+    justify-content: center;
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 5px; /* Optional border radius */
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers images horizontally */
+}
+
+/* Optional: Additional styling for images inside containers */
+img.responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Example container for images with specific styles */
+.image-container {
+    text-align: center; /* Center images within container */
+    padding: 10px;
+}
+
+
+main {
+    padding: 2rem;
+}
+
+.job-listings {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.job-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.job-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.job-item p {
+    margin-bottom: 0.5rem;
+}
+
+.job-item a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.job-item a:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.signup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.signup-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-btn:hover {
+    transform: scale(1.05);
+}
+
+.employer-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.employer-btn:hover {
+    background-color: #0056b3;
+}
+
+.jobseeker-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.jobseeker-btn:hover {
+    background-color: #218838;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+#resultsContainer {
+    margin-top: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    #searchInput {
+        width: calc(100% - 50px);
+    }
+
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #searchButton {
+        width: 100%;
+        max-width: 200px;
+        margin-top: 10px;
+    }
+
+    .signup-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .signup-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .job-item {
+        padding: 10px;
+    }
+    
+}
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+    .image-container {
+        padding: 5px;
+    }
+}
+

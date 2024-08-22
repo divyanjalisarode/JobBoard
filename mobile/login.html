@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Job Board</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="">Are you Employer or Job Seeker?
+            <input type="radio" id="emorsee" name="emorsee" required>Employer</input>
+            <input type="radio" id="emorsee" name="emorsee" required>Job Seeker</input></label>
+
+
+            <a href="sdash.html" class="login-btn">Sign up as an Employer</a>
+        </form>
+        <p id="error-message"></p>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
